@@ -12,9 +12,6 @@ Notifier  KEYWORD1
 Sensor  KEYWORD1
 Callback  KEYWORD1
 
-RapidStates KEYWORD1
-ButtonStates  KEYWORD1
-
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################

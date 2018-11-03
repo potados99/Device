@@ -53,11 +53,11 @@ void Device::setRapid(double duration, uint32_t cycle) {
   this->rapidDuration = durationMillis;
 }
 
-double getRapid() {
+double Device::getRapid() {
   uint64_t elapsed = millis() - this->rapidStartTime;
   bool noRapid = ! HAS(this->rapidStates, RAPID_MODE_IS_ON);
 
-  return (noRapid || (elapsed > this->rapidDuration)) ? 0.0 : this->rapidDuration - elapsed;
+  return (noRapid || (elapsed > this->rapidDuration)) ? 0.0L : this->rapidDuration - elapsed;
 }
 
 void Device::clearRapidProps() {

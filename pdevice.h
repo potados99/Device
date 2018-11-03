@@ -2,7 +2,7 @@
 #define PDEVICE_h
 
 #include "Arduino.h"
-#include "interface.h"
+#include "iloop.h"
 
 #define HAS(X, Y) ((X) & (Y))
 #define ADD(X, Y) ((X) |= (Y))
@@ -10,7 +10,7 @@
 
 #define PWM_VAL_RATE (2.55L)
 
-typedef enum RapidStates {
+typedef enum _RAPID_STATES {
     RAPID_MODE_IS_ON = 1,
     RAPID_DEV_IS_ON
 } RAPID_STATES;
@@ -24,7 +24,7 @@ typedef void (*Callback)(void);
 
 class Device : ILoop {
 private:
-    String name;
+    String      name;
     uint8_t     pin;
     uint8_t     pwmVal = 100;
     bool        power = false;
