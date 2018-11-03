@@ -6,12 +6,12 @@
 //  Copyright © 2018년 POTADOS. All rights reserved.
 //
 
-#ifndef interface_hpp
-#define interface_hpp
+#ifndef _ILOOP_H
+#define _ILOOP_H
 
 class ILoop {
 public:
     virtual void loop() = 0;
 };
 
-#endif /* interface_hpp */
+#endif /* _ILOOP_H */

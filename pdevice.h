@@ -1,5 +1,5 @@
-#ifndef PDEVICE_h
-#define PDEVICE_h
+#ifndef _PDEVICE_h
+#define _PDEVICE_h
 
 #include "Arduino.h"
 #include "iloop.h"
@@ -99,4 +99,4 @@ class Sensor {
 
 };
 
-#endif
+#endif /* _PDEVICE_h */
