@@ -3,6 +3,8 @@
 Device::Device(String name, uint8_t pin) {
   this->name = name;
   this->pin = pin;
+
+  pinMode(this->pin, OUTPUT);
 }
 
 void Device::loop() {
@@ -97,12 +99,15 @@ Button::Button(uint8_t pin, uint8_t floatBehavior, Callback clicked, bool deboun
   this->floatBehavior = floatBehavior;
   this->buttonClicked = clicked;
 
+  pinMode(this->pin, INPUT_PULLUP);
+//  digitalWrite(this->pin, HIGH);
+
   switch (floatBehavior) {
-    case INPUT_PULLUP:
+    case 1: // PULLUP
     this->pinActive = LOW;
     break;
 
-    case INPUT_PULLDOWN:
+    case 0: // PULLDOWN
     this->pinActive = HIGH;
     break;
 
