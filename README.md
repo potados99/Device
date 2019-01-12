@@ -1,5 +1,5 @@
 # libpdevice
-Potados device library.
+###### Potados device library. ######
 
 Provides some useful classes for controlling physical things.
 
