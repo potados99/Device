@@ -9,7 +9,6 @@
 Device  KEYWORD1
 Button	KEYWORD1
 Notifier  KEYWORD1
-Sensor  KEYWORD1
 Callback  KEYWORD1
 
 #######################################
