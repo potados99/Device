@@ -2,8 +2,6 @@
 #define includes_h
 
 #include "Arduino.h"
-#include "ILoop.h"
-#include "StringHelper.h"
 
 #define HAS(X, Y) ((X) & (Y))
 #define ADD(X, Y) ((X) |= (Y))

@@ -4,6 +4,7 @@
 #include "Arduino.h"
 
 class StringHelper {
+public:
 	static String split(String string, char separator, int index);
 };
 

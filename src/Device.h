@@ -2,6 +2,7 @@
 #define device_h
 
 #include "includes.h"
+#include "ILoop.h"
 
 #define PWM_VAL_RATE (2.55L)
 

@@ -2,6 +2,7 @@
 #define notifier_h
 
 #include "includes.h"
+#include "ILoop.h"
 
 class Notifier : ILoop {
 private:
