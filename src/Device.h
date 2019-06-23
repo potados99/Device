@@ -37,7 +37,7 @@ public:
     bool        getPower();
     void        togglePower();
 
-    void        setPWM(uint8_t pwmVal);
+    void        setPWM(uint8_t pwmVal); /* 0 to 100 */
     uint8_t     getPWM();
 
     void        setRapid(double duration, uint32_t cycle = 100);
