@@ -1,5 +1,5 @@
-#ifndef _button_h
-#define _button_h
+#ifndef button_h
+#define button_h
 
 #include "includes.h"
 
@@ -31,4 +31,4 @@ public:
     bool        isPushed();
 };
 
-#endif /* _button_h */
+#endif /* button_h */

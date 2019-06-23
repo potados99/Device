@@ -1,5 +1,5 @@
-#ifndef _notifier_h
-#define _notifier_h
+#ifndef notifier_h
+#define notifier_h
 
 #include "includes.h"
 
@@ -21,4 +21,4 @@ public:
     void        beep(uint32_t times);
 };
 
-#endif /* _notifier_h */
+#endif /* notifier_h */

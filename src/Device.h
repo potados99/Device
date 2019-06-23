@@ -1,5 +1,5 @@
-#ifndef _device_h
-#define _device_h
+#ifndef device_h
+#define device_h
 
 #include "includes.h"
 
@@ -42,6 +42,7 @@ public:
 
     void        setRapid(double duration, uint32_t cycle = 100);
     double      getRapid();
+
 };
 
-#endif /* _device_h */
+#endif /* device_h */
