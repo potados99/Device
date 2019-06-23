@@ -28,10 +28,17 @@ bool Device::getPower() {
 }
 
 void Device::togglePower() {
-  setPower(! this->power);
+  setPower(!this->power);
 }
 
 void Device::setPWM(uint8_t pwmVal) {
+  if (pwmVal > 100) {
+  	pwmVal = 100;
+  }
+  else if (pwmVal < 0) {
+	pwmVal = 0;
+  }
+
   this->pwmVal = pwmVal;
   setPower(this->power);
 }
